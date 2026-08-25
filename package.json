@@ -1,0 +1,26 @@
+{
+  "name": "licitia",
+  "version": "0.1.0",
+  "description": "LicitIA - Automação de busca, análise e relatório executivo de licitações públicas (PNCP) para PMEs",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "buscar": "node index.js buscar",
+    "analisar": "node index.js analisar",
+    "relatorio": "node index.js relatorio",
+    "abordagem": "node index.js abordagem",
+    "pipeline": "node index.js pipeline",
+    "playwright:install": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "dotenv": "^16.4.5",
+    "pdf-parse": "^1.1.1",
+    "playwright": "^1.47.0",
+    "pdfkit": "^0.15.0",
+    "commander": "^12.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
